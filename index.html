@@ -15,14 +15,6 @@
             margin: 0;
             padding: 0;
         }
-        .page {
-            width: 90%;
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
         .top-bar {
             text-align: center;
             padding: 20px;
@@ -56,9 +48,28 @@
         .section ul {
             padding-left: 20px;
         }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#certificates">Certificates</a>
+    </nav>
     <div class="page"></div>
         <div class="top-bar"></div>
             <h1 class="name">Patrick Kyle Moore</h1>
@@ -68,11 +79,11 @@
                 <p>patrickmoore109@gmail.com</p>
             </div>
         </div>
-        <div class="section"></div>
+        <div class="section" id="profile">
             <h2>Profile</h2>
             <p>Professional software developer with strong background in coding, debugging, and software design. Adept at collaborating within teams to deliver high-quality software solutions that meet evolving project needs. Skilled in various programming languages and frameworks, with focus on achieving impactful results and fostering reliable, adaptable work environment. Known for problem-solving abilities, effective communication, and results-driven approach to software development.</p>
         </div>
-        <div class="section"></div>
+        <div class="section" id="expertise">
             <h2>Expertise</h2>
             <ul>
                 <li>HTML</li>
@@ -81,14 +92,14 @@
                 <li>Python</li>
             </ul>
         </div>
-        <div class="section"></div>
+        <div class="section" id="education"></div>
             <h2>Education</h2>
             <ul>
                 <li>Springboard</li>
                 <li>Whitney M. Young Job Corps Center</li>
             </ul>
         </div>
-        <div class="section"></div>
+        <div class="section" id="experience">
             <h2>Experience</h2>
             <h3>ICQA Logistics (AWS)</h3>
             <ul>
@@ -101,7 +112,7 @@
                 <li>Managed time efficiently in order to complete all tasks within deadlines.</li>
                 <li>Organized and detail-oriented with a strong work ethic.</li>
             </ul>
-            <h3>Fulfillment Associate (Amazon FC)</h3>
+            <h3>Fulfillment Associate</h3>
             <ul>
                 <li>Assisted in the training of new fulfillment associates, sharing best practices and offering support as needed.</li>
                 <li>Demonstrated adaptability by cross-training in multiple job functions within the fulfillment center.</li>
@@ -132,7 +143,7 @@
                 <li>Recruited, interviewed and hired employees and implemented mentoring program to promote positive feedback and engagement.</li>
             </ul>
         </div>
-        <div class="section">
+        <div class="section" id="certificates">
             <h2>Certificates</h2>
             <ul>
                 <li>Certificate in Software Development - Springboard</li>
